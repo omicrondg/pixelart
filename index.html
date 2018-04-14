@@ -19,18 +19,26 @@
     </header>
     <main class="main-page">
       <section class="sizes">
-        <input type="number" min="0" max="100" value="0">
-        <input type="number" min="0" max="100" value="0">
+        <h3>Choose Grid Size</h3>
+        <form id="sizePicker">
+          <span>Set Width:</span>
+          <input id="inputWidth" type="number" min="0" max="100" value="0">
+          <span>Set Height:</span>         
+          <input id="inputHeight" type="number" min="0" max="100" value="0">
+          <input id="buildGrid" type="submit" value="Make Grid">
+        </form>
       </section>
       <section class="colors">
-        <input type="color">
+        <input id="colorPicker" type="color">
       </section>
       <section class="pixels">
+        <table></table>
       </section>
     </main>
     <footer class="footer">
       <p class="cops">Created by Dmitry Gurevich. 2018</p>
     </footer>
   </div>
+  <script src="js/pixelart.js"></script>
 </body>
 </html>
