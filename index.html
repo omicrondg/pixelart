@@ -11,34 +11,33 @@
   <link href="css/styles.css" rel="stylesheet">
   <title>Document</title>
 </head>
-
 <body>
-  <div class="container">
-    <header class="main-header">
-      <h1 class="top-title">Pixel Art Maker</h1>
-    </header>
-    <main class="main-page">
+  <header class="main-header">
+    <h1 class="top-title">Pixel Art Maker</h1>
+  </header>
+  <main class="main-page">
       <section class="sizes">
         <h3>Choose Grid Size</h3>
         <form id="sizePicker">
           <span>Set Width:</span>
-          <input id="inputWidth" type="number" min="0" max="100" value="0">
+          <input id="inputWidth" type="number" min="1" max="100" value="1">
           <span>Set Height:</span>         
-          <input id="inputHeight" type="number" min="0" max="100" value="0">
-          <input id="buildGrid" type="submit" value="Make Grid">
+          <input id="inputHeight" type="number" min="1" max="100" value="1">
+          <br>
+          <input id="createGrid" type="submit" value="Make Grid">
+          <input id="clearGrid" type="submit" value="Clear">
         </form>
       </section>
       <section class="colors">
         <input id="colorPicker" type="color">
       </section>
       <section class="pixels">
-        <table></table>
+        <table id="pixelsGrid"></table>
       </section>
-    </main>
-    <footer class="footer">
-      <p class="cops">Created by Dmitry Gurevich. 2018</p>
-    </footer>
-  </div>
+  </main>
+  <footer class="footer">
+    <p class="cops">Created by Dmitry Gurevich. 2018</p>
+  </footer>
   <script src="js/pixelart.js"></script>
 </body>
 </html>
